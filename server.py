@@ -65,7 +65,7 @@ async def spawn_resources():
 
 
 async def server():
-    async with websockets.serve(handle_client, "localhost", 8765):
+    async with websockets.serve(handle_client, "localhost", 10000):
         await asyncio.Future()  # Keep server running
 
 
